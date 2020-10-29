@@ -1,0 +1,399 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "lato";
+    src: url("../fonts/Lato-Regular.ttf");
+}
+
+body {
+    font-family: "lato";
+    color: #787773;
+    line-height: 1.6rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    font-size: .7rem;
+    z-index: 9;
+}
+
+nav ul {
+    display: flex;
+    margin: .4rem;
+}
+
+nav ul li {
+    display: inline;
+    margin: .2rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #787773;
+}
+
+.fas {
+    margin: .1rem;
+}
+
+.search {
+    margin: .8rem;
+}
+
+.imgHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../img/parallax1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 15rem;
+    opacity: .7;
+}
+
+h1 {
+    color: #FFF;
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: .3rem;
+    background-color: #000;
+    padding: .5rem;
+}
+
+p {
+    text-align: justify;
+}
+
+/*---About---*/
+
+#about {
+    width: 80%;
+    margin: 3rem auto;
+}
+
+article h2,
+article p:nth-child(2) {
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+article p:nth-child(2) {
+    font-style: italic;
+    font-size: .8rem;
+}
+
+article p {
+    margin-bottom: 1rem;
+}
+
+.col--img p {
+    text-align: center;
+    margin: 2rem 0 1.5rem;
+}
+
+.col--img img {
+    width: 100%;
+}
+
+.competences>p {
+    text-align: center;
+    margin: 3rem 0 2rem;
+}
+
+.competences--details--barres {
+    display: flex;
+}
+
+.competences--details>p {
+    letter-spacing: .4rem;
+    margin: .5rem 0;
+}
+
+.competences--details--barres--premier,
+.competences--details--barres--deuxieme,
+.competences--details--barres--troisieme {
+    background-color: #616161;
+    width: 50%;
+    color: #FFF;
+    text-align: center;
+}
+
+.competences--details--barres--premier {
+    width: 90%;
+}
+
+.competences--details--barres--deuxieme {
+    width: 85%;
+}
+
+.competences--details--barres--troisieme {
+    width: 75%;
+}
+
+.barres {
+    background-color: #F1F1F1;
+    width: 50%;
+    height: 2rem;
+}
+
+.premier {
+    width: 10%;
+}
+
+.deuxieme {
+    width: 15%;
+}
+
+.troisieme {
+    width: 25%;
+}
+
+/*---Portefolio---*/
+
+
+#portfolio {
+    margin: 2rem auto;
+}
+
+.compteurs {
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+    background-color: #616161;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: .8rem;
+}
+
+.portfolioImg {
+    background-image: url("../img/parallax2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolioImg h2 {
+    font-size: .8rem;
+    letter-spacing: .4rem;
+    font-weight: 400;
+    color: #FFF;
+}
+
+.work {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.work h2 {
+    margin: 2rem 0;
+}
+
+.work p:nth-child(3) {
+    margin-bottom: 1rem;
+}
+
+.workImg {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.workImg img {
+    width: 100%;
+}
+
+.work input {
+    background-color: #F1F1F1;
+    border: none;
+    margin-top: 1rem;
+    padding: .6rem;
+    font-size: .8rem;
+}
+
+/*---Contact---*/
+
+.contactImg {
+    background-image: url("../img/parallax3.jpg");
+    height: 10rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contactTexte {
+    width: 80%;
+    margin: 2rem auto;
+}
+
+.contactTexte > h2,
+.contactTexte > p {
+    text-align: center;
+}
+
+.contactTexte p:nth-child(2) {
+    font-style: italic;
+    font-style: .8rem;
+}
+
+.contactInfos {
+    width: 100%;
+    margin: 2rem 0;
+}
+
+.contactInfos img {
+    width: 100%;
+}
+
+.contactForm p:nth-child(4) {
+    font-size: .8rem;
+    margin-top: 1rem;
+}
+
+.contactForm .fas {
+    margin: .4rem;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: .4rem;
+    margin: .4rem 0;
+}
+
+form a {
+    text-decoration: none;
+    background-color: #000;
+    color: #FFF;
+    padding: .6rem;
+    font-size: .8rem;
+    float: right;
+    margin-bottom: 1rem;
+}
+
+/*---Footer---*/
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #666666;
+    padding: 1.5rem;
+    width: 100%;
+}
+
+footer .button a {
+    background-color: #F6F6F6;
+    color: #787773;
+    padding: .2rem;
+    margin: 1rem;
+    text-decoration: none;
+}
+
+footer .button {
+    margin-bottom: .5rem;
+}
+
+footer p:nth-child(3) {
+    color: #FFF;
+    font-size: .6rem;
+}
+
+.social {
+    color: #FFF;
+}
+
+.fa-telegram-plane:before {
+    margin: 0 .5rem;
+}
+
+@media screen and (min-width: 576px) {
+
+    nav ul li {
+        margin: 1rem;
+    }
+
+    .imgHeader {
+        height: 20rem;
+    }
+
+    .col {
+        display: flex;
+    }
+
+    .col--img,
+    .col--text {
+        width: 50%;
+        padding: 1rem;
+    }
+
+    .col--img {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .col--img p {
+        margin: 0;
+    }
+
+    .col--img img {
+        margin-top: 1rem;
+    }
+
+    .portfolioImg {
+        height: 20rem;
+    }
+
+    .workImg {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .workImg img {
+        width: 25%;
+        padding: .2rem;
+    }
+
+    .contactImg {
+        height: 20rem;
+    }
+
+    .contactInfos {
+        display: flex;
+    }
+
+    .contactInfos img {
+        width: calc(100%/3);
+        height: 10rem;
+    }
+
+    .contactForm {
+        width: calc(100%/3*2);
+        padding: 1rem;
+    }
+
+    /*---Paralax---*/
+
+    .imgHeader,
+    .portfolioImg,
+    .contactImg {
+        background-attachment: fixed;
+    }
+}
