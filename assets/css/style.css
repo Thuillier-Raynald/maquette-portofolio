@@ -361,6 +361,10 @@ footer p:nth-child(3) {
         height: 20rem;
     }
 
+    .portfolioImg h2 {
+        font-size: 2rem;
+    }
+
     .workImg {
         display: flex;
         flex-wrap: wrap;
